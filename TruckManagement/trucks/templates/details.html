@@ -1,0 +1,14 @@
+{{% extends "master.html" %}}
+
+
+{% block title %}
+Info about {{ mytrucks.truckmodel }} {{ mytrucks.yearmodel}}
+{% endblock %}
+
+{% block content %}
+<p>Truck Model: {{ mytrucks.truck_model}}</p>
+<p>Year Model: {{ mytrucks.year_model }}</p>
+
+<p>Back to <a href="/trucks">Truck Management</a></p>
+    
+{% endblock %}

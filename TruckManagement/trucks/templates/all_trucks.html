@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+Truck Management
+{% endblock %}
+
+{% block content %}
+<h1>Truck Management:</h1>
+
+<ul>
+    {% for x in mytrucks %}
+    <li><a href="info/"{{x.engine_model}}>{{ x.truck_model }} {{ x.year_model }}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
